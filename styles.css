@@ -1,0 +1,91 @@
+* {
+    font-size: 16px;
+    box-sizing: border-box;
+    margin: 0;
+    --yellow-background: #f4d04e
+}
+
+html, body {
+    height: 100%;
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#tile {
+    background-color: var(--yellow-background);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#card {
+    position: absolute;
+    top: 20%;
+    background-color: white;
+    border-radius: 16px;
+    width: min-content;
+    box-shadow: 12px 12px black;
+    transition-property: transform, box-shadow;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+}
+
+#card:hover {
+    transform: scale(110%);
+    box-shadow: calc(12px * 1.2) calc(12px *1.2) black ;
+}
+
+#card-hero {
+    margin: 16px 16px;
+}
+
+#card-hero  img {
+    display: block;
+    margin: 0 0 16px 0;
+    border-radius: 16px;
+}
+
+#badge {
+    font-weight: bold;
+    width: fit-content;
+    background-color: var(--yellow-background);
+    padding: 4px 12px;
+    border-radius: 4px;
+}
+
+#published {
+    padding: 8px 0;
+}
+
+#card-content {
+    margin: 16px 16px;
+
+}
+
+#card-content h1 {
+    font-size: 1.5rem;
+    margin: 16px 0;
+}
+
+#avatar {
+    margin: 16px 16px;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+}
+
+#avatar img {
+    width: 32px;
+    height: 32px;
+}
+
+.author {
+    font-weight: bold;
+}
